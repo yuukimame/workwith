@@ -1,0 +1,107 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  width: 1000px;
+  margin: 0 auto;
+  font-family: "游ゴシック";
+  color: #333333;
+  text-align: center;
+}
+
+.container{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.title{
+  font-size: 32px;
+  margin-bottom: 50px;
+}
+
+p{
+  font-size: 16px;
+}
+
+/* header */
+.mainVisual{
+  background-image: url(../images/bg-main_visual.jpg);
+  height: 400px;
+  background-size: cover;
+}
+
+.header-logo img{
+  float: left;
+  margin-left: 60px;
+  padding-top: 272px;
+}
+
+/* works */
+.works{
+  background-image: url(../images/bg-content.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.works .title{
+  color: #FFFFFF;
+}
+
+.work-box{
+  margin: 0 20px 50px 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 50px;
+}
+
+.work{
+  display: flex;
+  height: 280px;
+}
+
+.work-text{
+  background-color: #FFFFFF;
+  text-align: left;
+  padding: 0 20px;
+}
+
+.work-text h2{
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+/* company */
+.company-logos{
+  display: flex;
+  margin: 70px 110px 0 110px;
+}
+
+.company-logo{
+  margin-right: 60px;
+}
+.company-logos:last-child{
+  margin-right: 0;
+}
+
+/* footer */
+footer{
+  height: 60px;
+  background-color: #000000;
+  line-height: 60px;
+}
+
+footer small{
+  color: #FFFFFF;
+  font-size: 12px;
+  margin-left: 250px;
+}
+
+footer a{
+  color: #FFFFFF;
+  font-size: 12px;
+  margin-right: 20px;
+}
+
+footer .link{
+  float: right;
+}
