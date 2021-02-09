@@ -62,10 +62,6 @@ p{
   display: flex;
 }
 
-.work-img{
-  height: 280px;
-}
-
 .work-text{
   background-color: #FFFFFF;
   text-align: left;
@@ -80,13 +76,15 @@ p{
 /* company */
 .company-logos{
   display: flex;
-  margin: 70px 110px 0 110px;
+  margin: 70px auto 0 auto;
+  width: 780px;
 }
 
 .company-logo{
   margin-right: 60px;
 }
-.company-logos:last-child{
+
+.company-logo:last-child{
   margin-right: 0;
 }
 
@@ -111,4 +109,71 @@ footer a{
 
 footer .link{
   float: right;
+}
+
+@media screen and (max-width: 700px){
+  body{
+    width: 100vw;
+    overflow-x: hidden;
+  }
+
+  .conainer{
+    width: 80vw;
+  }
+
+  /* works */
+  .work-box{
+    padding: 50px auto;
+    margin: 0 auto;
+  }
+
+  .work{
+    display: block;
+    margin-bottom: 50px;
+    flex-basis: 80%;
+  }
+
+  .work:last-child{
+    margin-bottom: 0;
+  }
+
+  .work-img img{
+    width: 100%;
+    vertical-align: bottom;
+  }
+
+  .work-text{
+    padding: 10px;
+  }
+
+  .work-text h2{
+    margin-top: 0;
+  }
+
+  /* company */
+  .company{
+    width: 90vw;
+  }
+
+  .company-logos{
+    display: block;
+    width: 100%;
+  }
+
+  .company-logo, .company-logo:last-child{
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 15px;
+  }
+
+  /* footer */
+  footer{
+    text-align: center;
+    display: block;
+    padding: 0 10px;
+  }
+
+  footer small{
+    margin: 0;
+  }
 }
