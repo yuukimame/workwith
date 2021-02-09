@@ -44,6 +44,7 @@ p{
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .works .title{
   color: #FFFFFF;
 }
@@ -54,8 +55,14 @@ p{
   padding: 50px;
 }
 
+.work:nth-child(even){
+  flex-direction: row-reverse;
+}
 .work{
   display: flex;
+}
+
+.work-img{
   height: 280px;
 }
 
